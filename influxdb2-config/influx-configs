@@ -1,0 +1,5 @@
+[default]
+  url = "http://127.0.0.1:8086"
+  token = "ReplaceMeWithToken"
+  org = ReplaceMeWithYourOrganizationName
+  active = true
