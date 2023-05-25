@@ -13,7 +13,7 @@ Once you have token, close InfluxDB2 (Ctrl+C).
 
 You'll need to paste your OrgName and token to several files:
 * config/configuration.yaml - replace "ReplaceMeWithToken" and "ReplaceMeWithYourOrganizationName" with token and OrgName respectively.
-* influxdb2-config/infulx-configs - replace "ReplaceMeWithToken" and "ReplaceMeWithYourOrganizationName" with token and OrgName respectively.
+* influxdb2-config/influx-configs - replace "ReplaceMeWithToken" and "ReplaceMeWithYourOrganizationName" with token and OrgName respectively.
 * .env - replace "ReplaceMeWithToken" with token.
 
 ## Running
