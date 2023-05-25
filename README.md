@@ -1,4 +1,4 @@
-# homeassitant-docker-template
+# homeassistant-docker-template
 Home Assistant and InfluxDB2 Docker-compose templates for Raspberry Pi OS. Contains both applications. HA has access to USB0 for ZigBee gate.
 
 ## Requirements
