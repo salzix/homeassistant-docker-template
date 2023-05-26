@@ -23,6 +23,9 @@ You'll need to paste your OrgName and token to files:
 ## Running
 `docker compose up -d` runs this stack. It is configured to automatically start after host restart.
 
-## GUI:
+## GUI
 * your-RPi-IP:8123 - Home Assistant
 * your-RPi-IP:8086 - InfluxDB2
+
+## Lincense
+[The Unlicense](https://choosealicense.com/licenses/unlicense/)
