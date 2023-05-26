@@ -1,0 +1,26 @@
+- id: '1671373928977'
+  alias: Test czas-cast-radio
+  description: ''
+  trigger:
+  - platform: time
+    at: '15:35:00'
+  condition: []
+  action:
+  - service: media_player.play_media
+    target:
+      entity_id: media_player.tv
+    data:
+      media_content_id: media-source://radio_browser/9617a958-0601-11e8-ae97-52543be04c81
+      media_content_type: audio/aac
+    metadata:
+      title: Radio Paradise (320k)
+      thumbnail: https://www.radioparadise.com/favicon.ico
+      media_class: music
+      children_media_class:
+      navigateIds:
+      - {}
+      - media_content_type: app
+        media_content_id: media-source://radio_browser
+      - media_content_type: music
+        media_content_id: media-source://radio_browser/popular
+  mode: single
