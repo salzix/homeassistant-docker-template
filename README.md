@@ -8,7 +8,7 @@
 ## Configuration
 ### Before you begin
 * You may need to adjust mounted directory permissions to allow writes from HA and InfluxDB2 containers.
-* containers run on `network_mode: host` by default, to avoid hassle with IP=127.0.0.1 address. If you want to run on localhost, you'll need to comment `network_mode: host` line in both service sections of `compose.yml` file, and uncomment sections exposing ports.
+* containers run on `network_mode: host` by default, to avoid hassle with "localhost" different meanings in docker environment. If you want to run on localhost, you'll need to comment `network_mode: host` line in both service sections of `compose.yml` file, and uncomment sections exposing ports.
 
 ### Token for HA->InfluxDB2 access
 You'll need to generate access token to allow connecting HA to InfluxDB2. This token is generated inside InfluxDB2 GUI on first run.
@@ -21,11 +21,11 @@ You'll need to paste your OrgName and token to files:
 * influxdb2-config/influx-configs - replace "ReplaceMeWithToken" and "ReplaceMeWithYourOrganizationName" with token and OrgName respectively.
 
 ## Running
-`docker compose up -d` runs this stack. It is configured to automatically start after host restart.
+`docker compose up -d` runs the stack. It is configured to automatically start after host restart.
 
 ## GUI
 * your-RPi-IP:8123 - Home Assistant
 * your-RPi-IP:8086 - InfluxDB2
 
-## Lincense
+## License
 [The Unlicense](https://choosealicense.com/licenses/unlicense/)
