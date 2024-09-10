@@ -6,10 +6,9 @@ services:
       - ./config:/config
       - ./media:/media:rw
       - /etc/localtime:/etc/localtime:ro
+      - /run/dbus:/run/dbus:ro
     restart: unless-stopped
     privileged: true
-#    ports:
-#      - "8123:8123"
     network_mode: host
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0
@@ -25,7 +24,5 @@ services:
       - ./influxdb2-config:/etc/influxdb2:rw
       - ./influxdb2-data:/var/lib/influxdb2:rw
       - /etc/localtime:/etc/localtime:ro
-#    ports:
-#      - "8086:8086"
     restart: unless-stopped
     network_mode: host
